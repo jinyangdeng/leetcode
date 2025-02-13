@@ -16,11 +16,11 @@ class Solution:
         targetN = len(target)
         lcms = [0] * (1 << targetN)
         for bitmask in range(1, 1 << targetN):
-            lcn = 1
+            _lcm = 1
             for idx in range(targetN):
                 if bitmask & (1 << idx):
-                    lcn = lcm(lcn, target[idx])
-            lcms[bitmask] = lcn
+                    _lcm = lcm(_lcm, target[idx])
+            lcms[bitmask] = _lcm
 
         dp = [sys.maxsize] * (1 << targetN)
         dp[0] = 0
