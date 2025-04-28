@@ -1,3 +1,7 @@
+"""
+Original question: https://leetcode.com/problems/path-existence-queries-in-a-graph-i
+"""
+
 from typing import List
 
 class Solution:

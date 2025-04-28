@@ -1,3 +1,7 @@
+"""
+Original question: https://leetcode.com/problems/count-covered-buildings
+"""
+
 from typing import List
 from collections import defaultdict
 
